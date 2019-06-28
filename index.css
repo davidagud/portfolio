@@ -1,0 +1,350 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    padding: 5vh 10%;
+}
+
+/* Bootstrap Changes */
+
+.btn {
+    border-radius: 0;
+    border-width: 3px;
+}
+
+/* Frame */
+
+.frame {
+    border: 2px solid black;
+    height: 75vh;
+}
+
+/* Carousel */
+
+.slide {
+    width: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+/* Shared */
+
+#about-page, #work-page, #contact-page {
+    padding-top: 5vh;
+}
+
+.header h1 {
+    background-color: white;
+    display: inline;
+    margin-left: 10vh;
+}
+
+#about-page h1, #work-page h1, #contact-page h1 {
+    padding: 0 1.5vh;
+    margin-top: -.5vh;
+    margin-bottom: 0;
+}
+
+/* Name Page */
+
+#home-page {
+    background-image: url('coding-screen.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20vh 0 0 8vh;
+}
+
+#home-page h3 {
+    margin-top: 1.5vh;
+    margin-bottom: 2vh;
+}
+
+#view-work-button {
+    padding: 1vh 2vh;
+}
+
+/* About Page */
+
+#about-page .header {
+    background-image: linear-gradient(to right, #49A8A4, #80D3D0);
+}
+
+#about-content {
+    padding: 5vh 7vh;
+}
+
+#headshot {
+    background-image: url('headshot.jpg');
+    background-size: cover;
+    background-position: top;
+    height: 100%;
+    box-shadow: 3px 3px 8px grey;
+}
+
+#about-picture-paragraph {
+    margin-bottom: 5vh;
+}
+
+#about-paragraph-right h2 {
+    margin-bottom: 1.5vh;
+}
+
+#about-page .vl, #about-page .hl {
+    background-color: #49A8A4;
+}
+
+#skills h2 {
+    padding-right: 2vh;
+}
+
+#skills h3 {
+    padding-left: 1.5vh;
+}
+
+#skills .vl {
+    width: 5px;
+}
+
+#about-paragraph-right .hl {
+    height: 5px;
+    width: 60%;
+}
+
+/* Work */
+
+#work-page .header {
+    background-image: linear-gradient(to right, #DE7676, #EA9999);
+}
+
+#work-content {
+    padding: 7vh 1vw 0 1vw;
+}
+
+.project-column {
+    padding: 0 3vh;
+}
+
+.project-box {
+    background-image: url('headshot.jpg');
+    background-size: cover;
+    height: 35vh;
+    box-shadow: 3px 3px 8px grey;
+    margin-bottom: 4vh;
+}
+
+.project-column h6 {
+    margin-top: 1vh;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.hover-info {
+    background-color: rgb(0, 0, 0, .5);
+    height: 100%;
+    padding: 5vh 3vh;
+}
+
+.hover-info .btn {
+    border-radius: 30px;
+}
+
+#work-page .hl {
+    height: 5px;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: #4A4A4A;
+}
+
+/* Contact */
+
+#contact-page .header {
+    background-color: khaki;
+}
+
+#contact-content {
+    padding: 8vh 4vw;
+    height: 89%;
+    display: flex;
+    flex-flow: column;
+}
+
+#contact-info-col {
+    padding-left: 0;
+}
+
+#contact-top {
+    flex: 1 1 auto;
+}
+
+#contact-info-container-left {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    /* This needs to match the padding left of item below */
+    padding-right: 2vw;
+}
+
+#contact-info-container-right .row {
+    /* This needs to match the padding right of item above */
+    padding-left: 2vw;
+}
+
+#contact-info-container-right {
+    border-left: 5px solid #4A4A4A;
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+}
+
+.contact-type {
+    color: khaki;
+}
+
+#contact-info-container-right i {
+    margin-bottom: 2vh;
+}
+
+#contact-page i {
+    color: #4A4A4A;
+}
+
+#contact-info-container-right i {
+    margin-right: 1vw;
+}
+
+#on-the-move {
+    padding-right: 0;
+    border-bottom: 5px solid #4A4A4A;
+    margin-left: auto;
+}
+
+#contact-bottom p {
+    margin: 1.5vh 0 0 0;
+    padding: 0;
+}
+
+/* Menu */
+
+.menu {
+    padding-top: 3vh;
+}
+
+.menu-item a {
+    color: #4A4A4A;
+    text-decoration: none;
+}
+
+.home-menu-active {
+    color: green!important;
+}
+
+.about-menu-active {
+    color: #49A8A4!important;
+}
+
+.work-menu-active {
+    color: #DE7676!important;
+}
+
+.contact-menu-active {
+    color: khaki!important;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #4A4A4A;
+}
+
+#home-page h3, #about-paragraph, #about-paragraph-right h6, #skills h3,
+.project-column h6, .hover-info h4, .contact-data, #contact-bottom p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.btn, #contact-info-container-left h2, .contact-type, #on-the-move h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+#about-page h1, #work-page h1, #contact-page h1,
+.name, #about-paragraph-right h2, #skills h2, .project-column h3 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 800;
+}
+
+#about-page h1, #work-page h1, #contact-page h1 {
+    font-size: 10vh;
+    line-height: 8vh;
+}
+
+.name, #home-page h3 {
+    color: white;
+}
+
+.name {
+    font-size: 12vh;
+    line-height: 10vh;
+}
+
+#home-page h3, #about-paragraph-right h2, #skills h2 {
+    font-size: 3vh;
+}
+
+#view-work-button {
+    font-size: 1.6vh;
+}
+
+#about-paragraph {
+    font-size: 1.9vh;
+}
+
+#about-paragraph-right h2, #about-paragraph-right h6 {
+    margin-bottom: 1.5vh;
+}
+
+#about-paragraph-right h2, #skills h2,
+#on-the-move, #contact-bottom p {
+    text-align: right;
+}
+
+#skills h2 {
+    line-height: 4.5vh;
+}
+
+#skills h3 {
+    line-height: 4.6vh;
+}
+
+#skills h3, .menu {
+    font-size: 2vh;
+}
+
+.project-column, .menu-item {
+    text-align: center;
+}
+
+.hover-info h4 {
+    color: white!important;
+}
+
+#contact-info-container-left h2, #on-the-move h2 {
+    font-size: 6vh;
+}
+
+#on-the-move i {
+    font-size: 5vh;
+}
+
+#contact-info-container-right i {
+    font-size: 3vh;
+}

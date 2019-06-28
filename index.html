@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>David Agudelo</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <!-- CDNs -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="frame row">
+            <div class="carousel slide" id="carouselExampleIndicators" data-interval="false">
+
+                <!-- <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol> -->
+
+                <div class="carousel-inner">
+
+                    <!-- Home Page -->
+                    <div class="carousel-item container active" id="home-page">
+                        <div>
+                            <div class="name">DAVID</div>
+                            <div class="name">AGUDELO-</div>
+                            <div class="name">FRANKEL</div>
+                            <h3>Full-stack web developer</h3>
+                            <button type="button" class="btn btn-outline-light" data-target="#carouselExampleIndicators" data-slide-to="2" id="view-work-button">View Work</button>
+                        </div>
+                    </div>
+
+                    <!-- About Page -->
+                    <div class="carousel-item container" id="about-page">
+                        <div class="header row">
+                            <h1>ABOUT</h1>
+                        </div>
+                        <div class="row" id="about-content">
+                            <div class="col-9" id="about-paragraph-left">
+                                <div class="row" id="about-picture-paragraph">
+                                    <div class="headshot col-3">
+                                        <div id="headshot"></div>
+                                    </div>
+                                    <p id="about-paragraph" class="col-8">
+                                        David is a super talented web developer. He grew up in North Carolina and moved to Madison. He lives with his cute girlfriend and fucking crazy (cute) cats. He is very valuable and if you don’t see it, your loss.<br><br>
+                                        David really really wants a job, so make sure you give him one before this does permanent damage!
+                                    </p>
+                                </div>
+                                <div class="row" id="skills">
+                                    <div class="col-3" id="skills-title">
+                                        <h2>
+                                            Front-end<br>
+                                            Back-end<br>
+                                            CMS<br>
+                                            Databases<br>
+                                        </h2>
+                                    </div>
+                                    <div class="vl"></div>
+                                    <div class="col-7">
+                                        <h3>
+                                            Angular, HTML, CSS<br>
+                                            NodeJS, Ruby<br>
+                                            Apostrophe<br>
+                                            Mongo, MySQL, PostgreSQL<br>
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 d-flex flex-column align-items-end" id="about-paragraph-right">
+                                <h2>What I bring to the table</h2>
+                                <div class="hl"></div>
+                                <h6>Responsiveness</h6>
+                                <h6>Ability to learn</h6>
+                                <h6>Attention to detail</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Work Page -->
+                    <div class="carousel-item container" id="work-page">
+                        <div class="header row">
+                            <h1>PORTFOLIO</h1>
+                        </div>
+                        <div class="row justify-content-around" id="work-content">
+
+                            <!-- Tracker -->
+                            <div class="col-4 project-column">
+                                <div class="project-box">
+                                    <div class="hover-info hidden d-flex flex-column justify-content-between">
+                                        <h4>Hover info about the project</h4>
+                                        <span>
+                                            <button class="btn btn-light">Visit Project</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h3>Habit Tracker App</h3>
+                                <div class="hl"></div>
+                                <h6>Angular, NodeJS</h6>
+                            </div>
+
+                            <!-- Daffodil -->
+                            <div class="col-4 project-column">
+                                <div class="project-box">
+                                    <div class="hover-info hidden d-flex flex-column justify-content-between">
+                                        <h4>Hover info about the project</h4>
+                                        <span>
+                                            <button class="btn btn-light">Visit Project</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h3>Wedding Database</h3>
+                                <div class="hl"></div>
+                                <h6>Ruby on Rails</h6>
+                            </div>
+
+                            <!-- HexNest -->
+                            <div class="col-4 project-column">
+                                <div class="project-box">
+                                    <div class="hover-info hidden d-flex flex-column justify-content-between">
+                                        <h4>Hover info about the project</h4>
+                                        <span>
+                                            <button class="btn btn-light">Visit Project</button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <h3>HexNest</h3>
+                                <div class="hl"></div>
+                                <h6>NodeJS</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Page -->
+                    <div class="carousel-item" id="contact-page">
+                        <div class="header row">
+                            <h1>CONTACT</h1>
+                        </div>
+                        <div class="container" id="contact-content">
+                            <div class="row" id="contact-top">
+                                <div id="contact-info-container-left">
+                                    <h2>Let's<br>Talk.</h2>
+                                </div>
+                                <div class="col-7" id="contact-info-col">
+                                    <div class="container" id="contact-info-container-right">
+                                        <div class="row">
+                                            <h5 class="contact-type">Email &nbsp</h5><h5 class="contact-data">davidagud@gmail.com</h5>
+                                        </div>
+                                        <div class="row">
+                                            <h5 class="contact-type">Phone &nbsp</h5><h5 class="contact-data">608.609.6234</h5>
+                                        </div>
+                                        <div class="row">
+                                            <a><i class="fab fa-github"></i></a>
+                                            <a><i class="fab fa-linkedin"></i></a>
+                                        </div>
+                                        <div class="row">
+                                            <button class="btn btn-outline-dark">Resume</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 flex-column d-flex align-items-end justify-content-end" id="on-the-move">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <h2>
+                                        I'm on<br>
+                                        the<br>
+                                        move
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="row justify-content-end" id="contact-bottom">
+                                <p class="col-6">
+                                    I currently live in Madison, WI with my cute girlfriend, but we would be willing to relocate to North Carolina for the right opportunity which my girlfriend hopes is SOON:)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="menu row">
+            <div class="menu-item col-3">
+                <a href="#" data-target="#carouselExampleIndicators" data-slide-to="0" id="home-menu-item" class="home-menu-active">
+                    <i class="fas fa-home fa-lg"></i>
+                    <p>Home</p>
+                </a>
+            </div>
+            <div class="menu-item col-3">
+                <a href="#" data-target="#carouselExampleIndicators" data-slide-to="1" id="about-menu-item">
+                    <i class="fas fa-user fa-lg"></i>
+                    <p>About</p>
+                </a>
+            </div>
+            <div class="menu-item col-3">
+                <a href="#" data-target="#carouselExampleIndicators" data-slide-to="2" id="work-menu-item">
+                    <i class="fas fa-laptop-code fa-lg"></i>
+                    <p>Work</p>
+                </a>
+            </div>
+            <div class="menu-item col-3">
+                <a href="#" data-target="#carouselExampleIndicators" data-slide-to="3" id="contact-menu-item">
+                    <i class="fas fa-address-book fa-lg"></i>
+                    <p>Contact</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+        <!-- CDNs -->
+            <!-- Bootstrap -->
+                <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+                <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+            <!-- Icons -->
+                <script src="https://kit.fontawesome.com/0e12e3a07b.js"></script>
+        <!-- Created -->
+            <script src="scripts.js"></script>
+</body>
+</html>
