@@ -10,11 +10,18 @@
     <link rel="stylesheet" href="./index.css">
     <!-- CDNs -->
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600&display=swap" rel="stylesheet">
     
 </head>
 <body>
-    <div class="container">
+    <div class="cover rotate">
+        <h3>
+            Please rotate your device<br>or widen your browser window.<br>
+            <br>
+            This website is best viewed horizontally.
+        </h3>
+    </div>
+    <div class="container portfolio">
         <div class="frame row">
             <div class="carousel slide" id="carouselExampleIndicators" data-interval="false">
 
@@ -43,42 +50,45 @@
                         <div class="header row">
                             <h1>ABOUT</h1>
                         </div>
-                        <div class="row" id="about-content">
-                            <div class="col-9" id="about-paragraph-left">
-                                <div class="row" id="about-picture-paragraph">
-                                    <div class="headshot col-3">
+                        <div class="row content" id="about-content">
+                            <div class="col-9 d-flex flex-column" id="about-paragraph-left">
+                                <div class="row d-flex align-self-stretch" id="about-picture-paragraph">
+                                    <div class="headshot col-4">
                                         <div id="headshot"></div>
                                     </div>
-                                    <p id="about-paragraph" class="col-8">
+                                    <h5 id="about-paragraph" class="col-8">
                                         David is a super talented web developer. He grew up in North Carolina and moved to Madison. He lives with his cute girlfriend and fucking crazy (cute) cats. He is very valuable and if you don’t see it, your loss.<br><br>
                                         David really really wants a job, so make sure you give him one before this does permanent damage!
-                                    </p>
+                                    </h5>
                                 </div>
                                 <div class="row" id="skills">
-                                    <div class="col-3" id="skills-title">
-                                        <h2>
+                                    <div class="col-4" id="skills-title">
+                                        <h3>
                                             Front-end<br>
                                             Back-end<br>
                                             CMS<br>
                                             Databases<br>
-                                        </h2>
+                                        </h3>
                                     </div>
                                     <div class="vl"></div>
-                                    <div class="col-7">
-                                        <h3>
+                                    <div class="col-7" id="skills-list">
+                                        <h4>
                                             Angular, HTML, CSS<br>
                                             NodeJS, Ruby<br>
                                             Apostrophe<br>
                                             Mongo, MySQL, PostgreSQL<br>
-                                        </h3>
+                                        </h4>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3 d-flex flex-column align-items-end" id="about-paragraph-right">
-                                <h2>What I bring to the table</h2>
+                                <h3>What I bring to<br>the table</h3>
                                 <div class="hl"></div>
+                                <img src="./devices.svg" data-toggle="tooltip" data-placement="top" title="Icon made by Smashicons from www.flaticon.com" id="devices">
                                 <h6>Responsiveness</h6>
+                                <img src="./creative.svg" data-toggle="tooltip" data-placement="top" title="Icon made by Good Ware from www.flaticon.com">
                                 <h6>Ability to learn</h6>
+                                <img src="./loupe.svg" data-toggle="tooltip" data-placement="top" title="Icon made by Freepik from www.flaticon.com" id="magnifying-glass">
                                 <h6>Attention to detail</h6>
                             </div>
                         </div>
@@ -89,72 +99,72 @@
                         <div class="header row">
                             <h1>PORTFOLIO</h1>
                         </div>
-                        <div class="row justify-content-around" id="work-content">
+                        <div class="row justify-content-around content" id="work-content">
 
                             <!-- Tracker -->
                             <div class="col-4 project-column">
                                 <div class="project-box">
                                     <div class="hover-info hidden d-flex flex-column justify-content-between">
-                                        <h4>Hover info about the project</h4>
+                                        <h6>Hover info about the project</h6>
                                         <span>
                                             <button class="btn btn-light">Visit Project</button>
                                         </span>
                                     </div>
                                 </div>
-                                <h3>Habit Tracker App</h3>
+                                <h3>Habit<br>Tracker</h3>
                                 <div class="hl"></div>
-                                <h6>Angular, NodeJS</h6>
+                                <h5>Angular, NodeJS</h5>
                             </div>
 
                             <!-- Daffodil -->
                             <div class="col-4 project-column">
                                 <div class="project-box">
                                     <div class="hover-info hidden d-flex flex-column justify-content-between">
-                                        <h4>Hover info about the project</h4>
+                                        <h6>Hover info about the project</h6>
                                         <span>
                                             <button class="btn btn-light">Visit Project</button>
                                         </span>
                                     </div>
                                 </div>
-                                <h3>Wedding Database</h3>
+                                <h3>Wedding<br>Database</h3>
                                 <div class="hl"></div>
-                                <h6>Ruby on Rails</h6>
+                                <h5>Ruby on Rails</h5>
                             </div>
 
                             <!-- HexNest -->
                             <div class="col-4 project-column">
                                 <div class="project-box">
                                     <div class="hover-info hidden d-flex flex-column justify-content-between">
-                                        <h4>Hover info about the project</h4>
+                                        <h6>Hover info about the project</h6>
                                         <span>
                                             <button class="btn btn-light">Visit Project</button>
                                         </span>
                                     </div>
                                 </div>
-                                <h3>HexNest</h3>
+                                <h3>HexNest<br>Website</h3>
                                 <div class="hl"></div>
-                                <h6>NodeJS</h6>
+                                <h5>NodeJS</h5>
                             </div>
                         </div>
                     </div>
 
                     <!-- Contact Page -->
-                    <div class="carousel-item" id="contact-page">
+                    <div class="carousel-item container" id="contact-page">
                         <div class="header row">
                             <h1>CONTACT</h1>
                         </div>
-                        <div class="container" id="contact-content">
+                        <div class="container content" id="contact-content">
                             <div class="row" id="contact-top">
                                 <div id="contact-info-container-left">
                                     <h2>Let's<br>Talk.</h2>
                                 </div>
-                                <div class="col-7" id="contact-info-col">
+                                <div class="col-6" id="contact-info-col">
                                     <div class="container" id="contact-info-container-right">
                                         <div class="row">
-                                            <h5 class="contact-type">Email &nbsp</h5><h5 class="contact-data">davidagud@gmail.com</h5>
+                                            <h4 class="contact-type">Email &nbsp</h4><h4 class="contact-data">davidagud@gmail.com</h4>
                                         </div>
                                         <div class="row">
-                                            <h5 class="contact-type">Phone &nbsp</h5><h5 class="contact-data">608.609.6234</h5>
+                                            <h4 class="contact-type">Phone &nbsp</h4><h4 class="contact-data">608.609.6234</h4>
                                         </div>
                                         <div class="row">
                                             <a><i class="fab fa-github"></i></a>
@@ -175,9 +185,9 @@
                                 </div>
                             </div>
                             <div class="row justify-content-end" id="contact-bottom">
-                                <p class="col-6">
+                                <h5 class="col-7 col-md-6">
                                     I currently live in Madison, WI with my cute girlfriend, but we would be willing to relocate to North Carolina for the right opportunity which my girlfriend hopes is SOON:)
-                                </p>
+                                </h5>
                             </div>
                         </div>
                     </div>
@@ -191,25 +201,25 @@
             <div class="menu-item col-3">
                 <a href="#" data-target="#carouselExampleIndicators" data-slide-to="0" id="home-menu-item" class="home-menu-active">
                     <i class="fas fa-home fa-lg"></i>
-                    <p>Home</p>
+                    <h4>Home</h4>
                 </a>
             </div>
             <div class="menu-item col-3">
                 <a href="#" data-target="#carouselExampleIndicators" data-slide-to="1" id="about-menu-item">
                     <i class="fas fa-user fa-lg"></i>
-                    <p>About</p>
+                    <h4>About</h4>
                 </a>
             </div>
             <div class="menu-item col-3">
                 <a href="#" data-target="#carouselExampleIndicators" data-slide-to="2" id="work-menu-item">
                     <i class="fas fa-laptop-code fa-lg"></i>
-                    <p>Work</p>
+                    <h4>Work</h4>
                 </a>
             </div>
             <div class="menu-item col-3">
                 <a href="#" data-target="#carouselExampleIndicators" data-slide-to="3" id="contact-menu-item">
                     <i class="fas fa-address-book fa-lg"></i>
-                    <p>Contact</p>
+                    <h4>Contact</h4>
                 </a>
             </div>
         </div>

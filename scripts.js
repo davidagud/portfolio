@@ -36,3 +36,39 @@ $('#view-work-button').click(function() {
 $('.project-box').hover(function() {
     $(this).children('.hover-info').toggleClass('hidden');
 });
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+
+function getRatio() {
+    if ($(window).height() > $(window).width()) {
+        $('.cover').removeClass('rotate');
+        $('.portfolio').addClass('rotate');
+        console.log('rotate');
+    } else {
+        $('.cover').addClass('rotate');
+        $('.portfolio').removeClass('rotate');
+    }
+}
+
+getRatio();
+
+var waitForFinalEvent = (function () {
+    var timers = {};
+    return function (callback, ms, uniqueId) {
+      if (!uniqueId) {
+        uniqueId = "Don't call this twice without a uniqueId";
+      }
+      if (timers[uniqueId]) {
+        clearTimeout (timers[uniqueId]);
+      }
+      timers[uniqueId] = setTimeout(callback, ms);
+    };
+  })();
+
+$(window).resize(function () {
+    waitForFinalEvent(function(){
+        getRatio();
+    }, 50, "some unique string");
+});

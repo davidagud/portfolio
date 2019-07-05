@@ -3,7 +3,25 @@ html, body {
 }
 
 body {
-    padding: 5vh 10%;
+    padding: 4vh 4vw;
+}
+
+.cover {
+    background-color: black;
+    height: calc(100% + 8vh);
+    width: calc(100% + 8vw);
+    margin-top: -4vh;
+    margin-left: -4vw;
+    padding: 40% 10%;
+}
+
+.cover h3 {
+    color: white;
+    text-align: center;
+}
+
+.rotate {
+    display: none;
 }
 
 /* Bootstrap Changes */
@@ -17,7 +35,7 @@ body {
 
 .frame {
     border: 2px solid black;
-    height: 75vh;
+    height: 80vh;
 }
 
 /* Carousel */
@@ -43,13 +61,17 @@ body {
 .header h1 {
     background-color: white;
     display: inline;
-    margin-left: 10vh;
+    margin-left: 5vh;
 }
 
 #about-page h1, #work-page h1, #contact-page h1 {
     padding: 0 1.5vh;
     margin-top: -.5vh;
     margin-bottom: 0;
+}
+
+.content {
+    height: 66vh;
 }
 
 /* Name Page */
@@ -77,34 +99,60 @@ body {
 }
 
 #about-content {
-    padding: 5vh 7vh;
+    padding: 5vh 6vh;
+}
+
+#about-content .col-3, .headshot {
+    padding-left: 0!important;
+    padding-right: 0!important;
 }
 
 #headshot {
     background-image: url('headshot.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: center;
     height: 100%;
     box-shadow: 3px 3px 8px grey;
 }
 
 #about-picture-paragraph {
-    margin-bottom: 5vh;
+    height: 100%;
+    margin-bottom: 4vh;
 }
 
-#about-paragraph-right h2 {
+#about-paragraph-right h3, #about-paragraph-right h6 {
     margin-bottom: 1.5vh;
+}
+
+#about-paragraph {
+    padding-left: 2vw;
+    padding-right: .5vw;
 }
 
 #about-page .vl, #about-page .hl {
     background-color: #49A8A4;
 }
 
-#skills h2 {
-    padding-right: 2vh;
+#skills-title {
+    margin-left: -.4vw;
+    padding-left: 0!important;
+    padding-right: 0px!important;
+}
+
+#skills-list {
+    padding-left: 0px!important;
+    padding-right: 0!important;
+}
+
+#skills-list h4 {
+    width: 130%;
 }
 
 #skills h3 {
+    padding-right: 2vh;
+}
+
+#skills h4 {
     padding-left: 1.5vh;
 }
 
@@ -117,6 +165,20 @@ body {
     width: 60%;
 }
 
+#about-paragraph-right img {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    height: 10vh;
+}
+
+#devices {
+    margin-bottom: 0!important;
+}
+
+#magnifying-glass {
+   height: 9vh!important;
+}
+
 /* Work */
 
 #work-page .header {
@@ -124,7 +186,7 @@ body {
 }
 
 #work-content {
-    padding: 7vh 1vw 0 1vw;
+    padding: 7vh 1.5vw 8vh 1.5vw;
 }
 
 .project-column {
@@ -139,8 +201,9 @@ body {
     margin-bottom: 4vh;
 }
 
-.project-column h6 {
+.project-column h5 {
     margin-top: 1vh;
+    white-space: nowrap;
 }
 
 .hidden {
@@ -168,18 +231,18 @@ body {
 /* Contact */
 
 #contact-page .header {
-    background-color: khaki;
+    background-image: linear-gradient(to right, #E1C26F, #F2E2A8);
 }
 
 #contact-content {
-    padding: 8vh 4vw;
-    height: 89%;
+    padding: 6vh 6.5vh;
     display: flex;
     flex-flow: column;
 }
 
 #contact-info-col {
     padding-left: 0;
+    padding-right: 0;
 }
 
 #contact-top {
@@ -197,29 +260,29 @@ body {
 #contact-info-container-right .row {
     /* This needs to match the padding right of item above */
     padding-left: 2vw;
+    width: 130%;
 }
 
 #contact-info-container-right {
     border-left: 5px solid #4A4A4A;
     padding-top: 1vh;
     padding-bottom: 5vh;
+    padding-right: 0!important;
 }
 
 .contact-type {
-    color: khaki;
+    color: #E1C26F;
 }
 
 #contact-info-container-right i {
     margin-bottom: 2vh;
+    margin-right: 1vw;
 }
 
 #contact-page i {
     color: #4A4A4A;
 }
 
-#contact-info-container-right i {
-    margin-right: 1vw;
-}
 
 #on-the-move {
     padding-right: 0;
@@ -227,7 +290,7 @@ body {
     margin-left: auto;
 }
 
-#contact-bottom p {
+#contact-bottom h5 {
     margin: 1.5vh 0 0 0;
     padding: 0;
 }
@@ -256,17 +319,58 @@ body {
 }
 
 .contact-menu-active {
-    color: khaki!important;
+    color: #E1C26F!important;
 }
 
 /* Typography */
 
-h1, h2, h3, h4, h5, h6, p {
-    color: #4A4A4A;
+h1, h2, h3, h4, h5, h6, p { color: #4A4A4A; }
+
+h1 { font-size: 12vh; }
+
+h2 { font-size: 5.8vh; }
+
+h3 { font-size: 4vh; }
+
+h4 { font-size: 2.2vh; }
+
+h5 { font-size: 2.2vh; }
+
+h6 { font-size: 1.9vh; }
+
+p { font-size: 2vh; }
+
+.name {
+    font-size: 14vh;
+    line-height: 12vh;
 }
 
-#home-page h3, #about-paragraph, #about-paragraph-right h6, #skills h3,
-.project-column h6, .hover-info h4, .contact-data, #contact-bottom p {
+#about-content h3 { font-size: 3.3vh }
+
+#view-work-button {
+    font-size: 2.5vh;
+}
+
+.hover-info button {
+    font-size: 2vh;
+}
+
+#contact-info-container-right button {
+    font-size: 2vh;
+}
+
+#on-the-move i {
+    font-size: 6vh;
+}
+
+#contact-info-container-right i {
+    font-size: 5vh;
+}
+
+
+
+#home-page h3, #about-paragraph, #about-paragraph-right h6, #skills h4,
+.project-column h5, .hover-info h6, .contact-data, #contact-bottom h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
@@ -276,75 +380,46 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 500;
 }
 
+.menu-item {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
 #about-page h1, #work-page h1, #contact-page h1,
-.name, #about-paragraph-right h2, #skills h2, .project-column h3 {
+.name, #about-paragraph-right h3, #skills h3, .project-column h3 {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-weight: 800;
 }
 
 #about-page h1, #work-page h1, #contact-page h1 {
-    font-size: 10vh;
-    line-height: 8vh;
-}
-
-.name, #home-page h3 {
-    color: white;
-}
-
-.name {
-    font-size: 12vh;
-    line-height: 10vh;
-}
-
-#home-page h3, #about-paragraph-right h2, #skills h2 {
-    font-size: 3vh;
-}
-
-#view-work-button {
-    font-size: 1.6vh;
-}
-
-#about-paragraph {
-    font-size: 1.9vh;
-}
-
-#about-paragraph-right h2, #about-paragraph-right h6 {
-    margin-bottom: 1.5vh;
-}
-
-#about-paragraph-right h2, #skills h2,
-#on-the-move, #contact-bottom p {
-    text-align: right;
-}
-
-#skills h2 {
-    line-height: 4.5vh;
+    line-height: 9vh;
 }
 
 #skills h3 {
-    line-height: 4.6vh;
+    line-height: 4.5vh;
 }
 
-#skills h3, .menu {
-    font-size: 2vh;
+#skills h4 {
+    line-height: 4.7vh;
+}
+
+#contact-page h2 {
+    line-height: 7vh;
+}
+
+#about-paragraph-right h3, #skills h3,
+#on-the-move, #contact-bottom h5 {
+    text-align: right;
 }
 
 .project-column, .menu-item {
     text-align: center;
 }
 
-.hover-info h4 {
+.name, #home-page h3 {
+    color: white;
+}
+
+.hover-info h6 {
     color: white!important;
-}
-
-#contact-info-container-left h2, #on-the-move h2 {
-    font-size: 6vh;
-}
-
-#on-the-move i {
-    font-size: 5vh;
-}
-
-#contact-info-container-right i {
-    font-size: 3vh;
 }
