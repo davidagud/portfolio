@@ -1,40 +1,39 @@
-$('#home-menu-item').click(function() {
-    $('#home-menu-item').addClass('home-menu-active');
-    $('#about-menu-item').removeClass('about-menu-active');
-    $('#work-menu-item').removeClass('work-menu-active');
-    $('#contact-menu-item').removeClass('contact-menu-active');
+$('#carousel').on('slide.bs.carousel', function(e) {
+    if (e.to === 0) {
+        $('#home-menu-item').addClass('home-menu-active');
+        $('#about-menu-item').removeClass('about-menu-active');
+        $('#work-menu-item').removeClass('work-menu-active');
+        $('#contact-menu-item').removeClass('contact-menu-active');
+        $('.carousel-control-prev-icon, .carousel-control-next-icon').removeClass('carousel-icon-invert');
+    }
+
+    if (e.to === 1) {
+        $('#home-menu-item').removeClass('home-menu-active');
+        $('#about-menu-item').addClass('about-menu-active');
+        $('#work-menu-item').removeClass('work-menu-active');
+        $('#contact-menu-item').removeClass('contact-menu-active');
+        $('.carousel-control-prev-icon, .carousel-control-next-icon').addClass('carousel-icon-invert');
+    }
+
+    if (e.to === 2) {
+        $('#home-menu-item').removeClass('home-menu-active');
+        $('#about-menu-item').removeClass('about-menu-active');
+        $('#work-menu-item').addClass('work-menu-active');
+        $('#contact-menu-item').removeClass('contact-menu-active');
+        $('.carousel-control-prev-icon, .carousel-control-next-icon').addClass('carousel-icon-invert');
+    }
+
+    if (e.to === 3) {
+        $('#home-menu-item').removeClass('home-menu-active');
+        $('#about-menu-item').removeClass('about-menu-active');
+        $('#work-menu-item').removeClass('work-menu-active');
+        $('#contact-menu-item').addClass('contact-menu-active');
+        $('.carousel-control-prev-icon, .carousel-control-next-icon').addClass('carousel-icon-invert');
+    }
 });
 
-$('#about-menu-item').click(function() {
-    $('#home-menu-item').removeClass('home-menu-active');
-    $('#about-menu-item').addClass('about-menu-active');
-    $('#work-menu-item').removeClass('work-menu-active');
-    $('#contact-menu-item').removeClass('contact-menu-active');
-});
-
-$('#work-menu-item').click(function() {
-    $('#home-menu-item').removeClass('home-menu-active');
-    $('#about-menu-item').removeClass('about-menu-active');
-    $('#work-menu-item').addClass('work-menu-active');
-    $('#contact-menu-item').removeClass('contact-menu-active');
-});
-
-$('#contact-menu-item').click(function() {
-    $('#home-menu-item').removeClass('home-menu-active');
-    $('#about-menu-item').removeClass('about-menu-active');
-    $('#work-menu-item').removeClass('work-menu-active');
-    $('#contact-menu-item').addClass('contact-menu-active');
-});
-
-$('#view-work-button').click(function() {
-    $('#home-menu-item').removeClass('home-menu-active');
-    $('#about-menu-item').removeClass('about-menu-active');
-    $('#work-menu-item').addClass('work-menu-active');
-    $('#contact-menu-item').removeClass('contact-menu-active');
-});
-
-$('.project-box').hover(function() {
-    $(this).children('.hover-info').toggleClass('hidden');
+$('.project-column').hover(function() {
+    $(this).children('#overlay').toggleClass('hidden');
 });
 
 $(document).ready(function(){
