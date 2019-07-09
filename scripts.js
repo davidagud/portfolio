@@ -4,7 +4,6 @@ $('#carousel').on('slide.bs.carousel', function(e) {
         $('#about-menu-item').removeClass('about-menu-active');
         $('#work-menu-item').removeClass('work-menu-active');
         $('#contact-menu-item').removeClass('contact-menu-active');
-        $('.carousel-control-prev-icon, .carousel-control-next-icon').removeClass('carousel-icon-invert');
     }
 
     if (e.to === 1) {
@@ -12,7 +11,6 @@ $('#carousel').on('slide.bs.carousel', function(e) {
         $('#about-menu-item').addClass('about-menu-active');
         $('#work-menu-item').removeClass('work-menu-active');
         $('#contact-menu-item').removeClass('contact-menu-active');
-        $('.carousel-control-prev-icon, .carousel-control-next-icon').addClass('carousel-icon-invert');
     }
 
     if (e.to === 2) {
@@ -20,7 +18,6 @@ $('#carousel').on('slide.bs.carousel', function(e) {
         $('#about-menu-item').removeClass('about-menu-active');
         $('#work-menu-item').addClass('work-menu-active');
         $('#contact-menu-item').removeClass('contact-menu-active');
-        $('.carousel-control-prev-icon, .carousel-control-next-icon').addClass('carousel-icon-invert');
     }
 
     if (e.to === 3) {
@@ -28,12 +25,19 @@ $('#carousel').on('slide.bs.carousel', function(e) {
         $('#about-menu-item').removeClass('about-menu-active');
         $('#work-menu-item').removeClass('work-menu-active');
         $('#contact-menu-item').addClass('contact-menu-active');
-        $('.carousel-control-prev-icon, .carousel-control-next-icon').addClass('carousel-icon-invert');
     }
 });
 
 $('.project-column').hover(function() {
     $(this).children('#overlay').toggleClass('hidden');
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    };
+    if (isMobileDevice()) {
+        $(this).children('#overlay').children('.scroll').removeClass('shrouded');
+    } else {
+        $(this).children('#overlay').children('.scroll').addClass('shrouded');
+    }
 });
 
 $(document).ready(function(){
