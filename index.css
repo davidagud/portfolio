@@ -395,20 +395,11 @@ p { font-size: 2vh; }
     font-size: 2.5vh;
 }
 
-#about-paragraph h5 {
-    font-size: 1.2vw!important;
-    line-height: 4vh!important;
-}
-
-#about-paragraph .btn {
-    font-size: 1vw!important;
-}
-
 #overlay h6, #overlay .btn  {
     font-size: .8rem!important;
 }
 
-#contact-info-container-right button {
+#contact-info-container-right a, #about-paragraph .btn {
     font-size: 2vh;
 }
 
@@ -420,7 +411,7 @@ p { font-size: 2vh; }
     font-size: 5vh;
 }
 
-#home-page h3, #about-paragraph, #about-paragraph-right h6, #skills h4,
+#home-page h3, #about-paragraph, #about-paragraph h5, #about-paragraph-right h6, #skills h4,
 .project-column h5, #overlay h6, #overlay .btn, .contact-data, #contact-bottom h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
