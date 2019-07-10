@@ -30,10 +30,14 @@ $('#carousel').on('slide.bs.carousel', function(e) {
 
 $('.project-column').hover(function() {
     $(this).children('#overlay').toggleClass('hidden');
-    function isMobileDevice() {
-        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-    };
-    if (isMobileDevice()) {
+    var overlay = $(this).children('#overlay');
+    var overlayHeight = overlay.height();
+    var overlayPadding = parseInt(overlay.css('padding-top'), 10) + parseInt(overlay.css('padding-bottom'), 10);
+    var overlayNoPadding = overlayHeight - overlayPadding;
+    var paragraphHeight = $(this).children('#overlay').children('h6').height();
+    var spanHeight = $(this).children('#overlay').children('span').height();
+    console.log(overlayHeight, overlayPadding, overlayNoPadding);
+    if (paragraphHeight + spanHeight > overlayNoPadding) {
         $(this).children('#overlay').children('.scroll').removeClass('shrouded');
     } else {
         $(this).children('#overlay').children('.scroll').addClass('shrouded');
